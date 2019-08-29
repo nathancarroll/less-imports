@@ -1,0 +1,17 @@
+@header-color: aqua;
+@header-size: 25px;
+
+h2 {
+    color: @header-color;
+    font-size: @header-size;
+    //text-transform: @header-transform;
+}
+
+div {
+    background: #083187;
+    height: 10px;
+    &:after {
+        background: url(../library/pay-online.png);
+        background-size: cover;
+    }
+}

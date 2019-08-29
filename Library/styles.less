@@ -1,0 +1,12 @@
+@design-theme: "library";
+
+// DEFAULT STYLES IMPORTS
+@import "../main/homepage.less";
+
+// DEFINE AND CALL THE IMPORT MIXIN FOR THE DESIGN THEME
+.import-theme(@theme) when not (@design-theme = "main") {
+    @import (optional) "homepage.less";
+}
+
+.import-theme(@design-theme);
+
